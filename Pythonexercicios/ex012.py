@@ -2,5 +2,9 @@ nome = " DESAFIO 012 "
 print('{:=^40}\n'.format(nome))
 
 print('Hoje é dia de liquidação! Tudo com 5% de Desconto!!!')
-p = float(input('Digite o valor do seu produto e veja quanto custará com o desconto: '))
-print('Seu produto normalmente custaria {:.2f}, mas hoje ele vai custar {:.2f}'.format(p, p-(p/100)*5))
+
+preço = float(input('Digite o valor do seu produto e veja quanto custará com o desconto: R$ '))
+
+novo_preço = preço - (preço/100)*5
+
+print('Seu produto normalmente custaria R$ {:.2f}, mas hoje ele vai custar R$ {:.2f}'.format(preço, novo_preço))

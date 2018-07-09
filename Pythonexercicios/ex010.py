@@ -1,6 +1,7 @@
 import requests
 import json
 import datetime
+import time
 
 requisicao = requests.get("http://api.promasters.net.br/cotacao/v1/valores")
 cotacao = json.loads(requisicao.text)
@@ -8,7 +9,8 @@ cotacao = json.loads(requisicao.text)
 
 
 nome = " DESAFIO 010 "
-print('{:=^60}\n'.format(nome), "               ", datetime.datetime.now())
+print('{:=^60}'.format(nome))
+print('{:=^60}\n'.format(str(datetime.datetime.now())))
 
 print('Vamos transformar em outras moedas o que você tem na carteira????\n')
 grana = float(input('Digite quanto você tem na carteira: R$ '))

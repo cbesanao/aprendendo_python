@@ -35,7 +35,6 @@ try:
 except FileNotFoundError:
     arquivo = open(festa_do+".doc", 'w+')
     arquivo.writelines("\n"+str(lista_de_convidados))
-#faca o que quiser
 arquivo.close()
 
 
